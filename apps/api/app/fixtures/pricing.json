@@ -1,0 +1,37 @@
+{
+  "version": "demo-2025-10",
+  "currency": "USD",
+  "note": "Demo rates recorded by the build agent from Anthropic's public pricing as of Oct 2025. NOT re-verified at runtime (verified_at is null). Confirm at source_url before relying on these numbers; update by adding a new version.",
+  "models": [
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "effective_from": "2025-10-15",
+      "input_usd_per_million": 1.0,
+      "output_usd_per_million": 5.0,
+      "cache_read_usd_per_million": 0.1,
+      "cache_write_usd_per_million": 1.25,
+      "source_url": "https://www.anthropic.com/pricing"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-20250929",
+      "effective_from": "2025-09-29",
+      "input_usd_per_million": 3.0,
+      "output_usd_per_million": 15.0,
+      "cache_read_usd_per_million": 0.3,
+      "cache_write_usd_per_million": 3.75,
+      "source_url": "https://www.anthropic.com/pricing"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-1-20250805",
+      "effective_from": "2025-08-05",
+      "input_usd_per_million": 15.0,
+      "output_usd_per_million": 75.0,
+      "cache_read_usd_per_million": 1.5,
+      "cache_write_usd_per_million": 18.75,
+      "source_url": "https://www.anthropic.com/pricing"
+    }
+  ]
+}

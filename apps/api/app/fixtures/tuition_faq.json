@@ -1,0 +1,39 @@
+{
+  "business": "Bright Path Tuition",
+  "disclaimer": "Fictitious demo business. All facts are demo-only.",
+  "locale": "en",
+  "knowledge_version": 1,
+  "products": ["mathematics", "science", "english"],
+  "entries": [
+    {
+      "intent_key": "class_hours",
+      "question": "What are your class hours?",
+      "aliases": ["When are classes held?", "What time are classes?", "When do classes start?"],
+      "answer": "Bright Path Tuition (demo) runs classes Monday to Friday, 15:00 to 21:00, and Saturday, 09:00 to 13:00."
+    },
+    {
+      "intent_key": "subjects",
+      "question": "What subjects do you teach?",
+      "aliases": ["Which subjects do you offer?", "What subjects are available?"],
+      "answer": "Our demo centre offers Mathematics, Science and English for secondary students."
+    },
+    {
+      "intent_key": "trial_class",
+      "question": "Do you offer a trial class?",
+      "aliases": ["Is there a free trial class?", "Can I try a class first?"],
+      "answer": "Yes, one trial class per subject is available; please book through our staff."
+    },
+    {
+      "intent_key": "online_classes",
+      "question": "Do you have online classes?",
+      "aliases": ["Are classes available online?", "Can I study online?"],
+      "answer": "Selected classes are available online via video call; ask our staff for the current schedule."
+    },
+    {
+      "intent_key": "enrolment",
+      "question": "How do I enrol?",
+      "aliases": ["How do I register?", "How can I sign up?"],
+      "answer": "Enrolment is handled by our staff; this assistant cannot take registrations or payments."
+    }
+  ]
+}

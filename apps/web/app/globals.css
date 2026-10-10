@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+/* Vendored shadcn 4.21.4 stylesheet; license in styles/shadcn.LICENSE. */
+@import "../styles/shadcn.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * TokenGuard design tokens.
+ * Palette: MASTER_BUILD_PACK §14 (explicit). Principles adopted from the Notion DESIGN.md analysis
+ * (getdesign.md): warm off-white canvas, white cards on hairlines, barely-there layered shadows,
+ * heavy tightly-tracked headings, one structural accent (blue) for actions/links/focus only.
+ */
+:root {
+  --background: #fafaf9; /* warm canvas */
+  --foreground: #202124;
+  --card: #ffffff;
+  --card-foreground: #202124;
+  --popover: #ffffff;
+  --popover-foreground: #202124;
+  --primary: #2563eb; /* the single structural accent */
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f3;
+  --secondary-foreground: #202124;
+  --muted: #f4f4f3;
+  --muted-foreground: #71717a;
+  --accent: #eff6ff; /* soft blue tint for hover/selected */
+  --accent-foreground: #1d4ed8;
+  --destructive: #dc2626;
+  --border: #e7e7e5;
+  --input: #dddddb;
+  --ring: #2563eb;
+
+  --warning: #d97706;
+  --success: #15803d;
+  --danger: #dc2626;
+
+  /* Chart series: actual (ink), forecast (blue), budget (amber), scenario (green), reference (grey) */
+  --chart-actual: #202124;
+  --chart-forecast: #2563eb;
+  --chart-band: #bfdbfe;
+  --chart-budget: #d97706;
+  --chart-scenario: #15803d;
+  --chart-reference: #a1a1aa;
+
+  --radius: 0.75rem; /* 12px cards */
+  --shadow-soft: 0 0.175px 1.041px rgba(0, 0, 0, 0.01), 0 0.8px 2.925px rgba(0, 0, 0, 0.02),
+    0 2.025px 7.847px rgba(0, 0, 0, 0.027), 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --radius-sm: calc(var(--radius) - 7px); /* 5px rows/pills */
+  --radius-md: calc(var(--radius) - 4px); /* 8px utility buttons */
+  --radius-lg: var(--radius); /* 12px cards */
+  --radius-xl: calc(var(--radius) + 4px);
+  --shadow-soft: var(--shadow-soft);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-size: 14px;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "lnum";
+  }
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  h2,
+  h3 {
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Eyebrow label (table headers, small section labels) */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

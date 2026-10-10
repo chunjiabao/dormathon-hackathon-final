@@ -1,0 +1,39 @@
+{
+  "business": "Kedai Kita Online",
+  "disclaimer": "Fictitious demo business. All facts are demo-only.",
+  "locale": "en",
+  "knowledge_version": 1,
+  "products": [],
+  "entries": [
+    {
+      "intent_key": "shipping_time",
+      "question": "How long does shipping take?",
+      "aliases": ["How long is delivery?", "When will items be shipped?", "What is the shipping time?"],
+      "answer": "Demo orders usually ship within 2 working days; delivery times vary by courier and area."
+    },
+    {
+      "intent_key": "return_policy",
+      "question": "What is your return policy?",
+      "aliases": ["Can I return an item?", "How do returns work?"],
+      "answer": "Unused items can be returned within 7 days in original packaging (demo policy); contact our staff to start a return."
+    },
+    {
+      "intent_key": "payment_methods",
+      "question": "What payment methods do you accept?",
+      "aliases": ["How can I pay?", "Which payment methods are accepted?"],
+      "answer": "The demo store lists online banking and cards at checkout; this assistant never takes payment details."
+    },
+    {
+      "intent_key": "store_location",
+      "question": "Do you have a physical store?",
+      "aliases": ["Is there a physical shop?", "Can I visit your store?"],
+      "answer": "Kedai Kita is an online-only demo store."
+    },
+    {
+      "intent_key": "contact_support",
+      "question": "How do I contact customer support?",
+      "aliases": ["How can I reach support?", "How do I talk to a person?"],
+      "answer": "Please use the contact form on our demo site; staff reply during business hours."
+    }
+  ]
+}

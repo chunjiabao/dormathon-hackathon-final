@@ -1,0 +1,119 @@
+{
+  "business": "Sweet Crumbs Bakery",
+  "disclaimer": "Fictitious demo business. All facts are demo-only; no real orders, payments or customer records are processed.",
+  "locale": "en",
+  "knowledge_version": 1,
+  "products": [
+    "vanilla cloud",
+    "midnight chocolate",
+    "red velvet",
+    "vanilla",
+    "chocolate"
+  ],
+  "entries": [
+    {
+      "intent_key": "opening_hours",
+      "question": "What are your opening hours?",
+      "aliases": [
+        "What time do you open?",
+        "When do you open?",
+        "When are you open?",
+        "What are your hours?",
+        "What time do you close?",
+        "When do you close?",
+        "What are your opening times?"
+      ],
+      "answer": "Sweet Crumbs Bakery (demo) is open Monday to Saturday, 10:00 to 18:00, and closed on Sunday."
+    },
+    {
+      "intent_key": "open_sunday",
+      "question": "Are you open on Sunday?",
+      "aliases": [
+        "Do you open on Sunday?",
+        "Are you open Sunday?",
+        "Is the bakery open on Sundays?"
+      ],
+      "answer": "No, Sweet Crumbs Bakery (demo) is closed on Sundays. We are open Monday to Saturday, 10:00 to 18:00."
+    },
+    {
+      "intent_key": "open_saturday",
+      "question": "Are you open on Saturday?",
+      "aliases": [
+        "Do you open on Saturday?",
+        "Are you open Saturday?",
+        "Is the bakery open on Saturdays?"
+      ],
+      "answer": "Yes, Sweet Crumbs Bakery (demo) is open on Saturday from 10:00 to 18:00."
+    },
+    {
+      "intent_key": "delivery_general",
+      "question": "Do you deliver?",
+      "aliases": [
+        "Do you offer delivery?",
+        "Is delivery available?",
+        "Can you deliver cakes?"
+      ],
+      "answer": "We offer delivery within a limited service area. Delivery fees and availability are confirmed manually by our staff. Pickup from the bakery is also available."
+    },
+    {
+      "intent_key": "pickup",
+      "question": "Can I pick up my cake?",
+      "aliases": [
+        "Do you have pickup?",
+        "Is pickup available?",
+        "Can I collect my cake?"
+      ],
+      "answer": "Yes, pickup is available at the bakery during opening hours (Monday to Saturday, 10:00 to 18:00)."
+    },
+    {
+      "intent_key": "cake_menu",
+      "question": "What cakes do you have?",
+      "aliases": [
+        "What cakes do you sell?",
+        "Show me your cakes",
+        "What is on your cake menu?"
+      ],
+      "answer": "Our demo menu has the Vanilla Cloud Cake (RM55), Midnight Chocolate Cake (RM70) and Red Velvet Cake (RM75). Sizes and availability are not guaranteed."
+    },
+    {
+      "intent_key": "price_vanilla_cloud",
+      "question": "How much is the Vanilla Cloud Cake?",
+      "aliases": [
+        "How much is Vanilla Cake?",
+        "What is the price of the Vanilla Cloud Cake?",
+        "Vanilla Cloud Cake price"
+      ],
+      "answer": "The Vanilla Cloud Cake is RM55 (demo price). Sizes and availability are not guaranteed."
+    },
+    {
+      "intent_key": "price_midnight_chocolate",
+      "question": "How much is the Midnight Chocolate Cake?",
+      "aliases": [
+        "How much is Chocolate Cake?",
+        "What is the price of the Midnight Chocolate Cake?",
+        "Midnight Chocolate Cake price"
+      ],
+      "answer": "The Midnight Chocolate Cake is RM70 (demo price). Sizes and availability are not guaranteed."
+    },
+    {
+      "intent_key": "price_red_velvet",
+      "question": "How much is the Red Velvet Cake?",
+      "aliases": [
+        "How much is Red Velvet?",
+        "What is the price of the Red Velvet Cake?",
+        "Red Velvet Cake price"
+      ],
+      "answer": "The Red Velvet Cake is RM75 (demo price). Sizes and availability are not guaranteed."
+    },
+    {
+      "intent_key": "custom_orders",
+      "question": "Can I order a custom cake?",
+      "aliases": [
+        "Do you make custom cakes?",
+        "Can you make a personalised cake?",
+        "Do you take custom orders?"
+      ],
+      "answer": "For custom cakes, please contact our bakery staff directly; this assistant cannot take orders or payments."
+    }
+  ]
+}

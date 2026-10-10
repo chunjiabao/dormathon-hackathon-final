@@ -1,0 +1,37 @@
+# Render Blueprint for the FastAPI backend. Secrets are set in the Render dashboard (sync: false).
+services:
+  - type: web
+    name: tokenguard-api
+    runtime: docker
+    rootDir: apps/api
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DEMO_MODE
+        value: "false"
+      - key: ANTHROPIC_MODEL
+        value: claude-haiku-4-5-20251001
+      - key: MYR_PER_USD_DEMO
+        value: "4.70"
+      - key: PRICING_CATALOG_VERSION
+        value: demo-2025-10
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_JWKS_URL
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: SCHEDULER_SECRET
+        generateValue: true
+      - key: CHAT_TOKEN_SECRET
+        generateValue: true
+      - key: FINGERPRINT_SECRET
+        generateValue: true
+      - key: OWNER_AUTH_USER_ID
+        sync: false
